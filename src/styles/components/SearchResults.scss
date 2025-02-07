@@ -1,0 +1,48 @@
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .search-result-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+
+    .result-header {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+
+    .result-title {
+      font-size: 1.2em;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .result-details {
+      font-size: 0.9em;
+      color: #777;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .author {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}
